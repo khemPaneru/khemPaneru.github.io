@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Centers horizontally */
+  min-height: 100vh; /* Ensures body takes full height */
+}
+
+nav {
+  background-color: #222;
+  padding: 1rem;
+  text-align: center;
+  width: 100%; /* Ensures navigation spans across the page */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centers the navigation items */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  width: 100%; /* Make sure hero section spans the page */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.section {
+  padding: 50px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  width: 100%; /* Ensure sections are fully aligned */
+  text-align: center; /* Centers content inside each section */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 0 20px;
+}
+
+.linkedin-link {
+  margin-left: 10px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.skills-list, .interests {
+  padding-left: 0; /* Remove left padding */
+  text-align: left; /* Ensures the list items are left aligned */
+  margin: 0 auto; /* Centers the list in the container */
+  display: inline-block; /* Makes it inline-block for centering */
+  
+ 
+}
+
+.skills-list li, .interests li {
+  list-style-position: inside; /* Moves the bullets inside */
+}
+
+.project {
+  margin-bottom: 30px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+}
+
+.back-to-top {
+  display: inline-block;
+  margin-top: 10px
