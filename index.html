@@ -4,120 +4,241 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Khem Paneru - Portfolio</title>
-    <meta name="description" content="Khem Paneru - Networking Technician and AI Enthusiast Portfolio">
-    <meta property="og:title" content="Khem Paneru's Portfolio">
-    <meta property="og:description" content="Check out Khem's projects, skills, and background in AI, networking, and development.">
+    <title>Khem Paneru - IT Support Portfolio</title>
+    <meta name="description" content="Khem Paneru - IT Help Desk, Junior Network & Cloud Enthusiast Portfolio">
 
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="khem.css">
+
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #1f1f1f;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 10px 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #00c6ff;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            margin-top: 10px;
+        }
+
+        .section {
+            padding: 60px 20px;
+            background: white;
+            margin: 20px auto;
+            max-width: 1000px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .skills-list li, .interests li {
+            margin-bottom: 8px;
+        }
+
+        .project {
+            background: #f1f1f1;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .project a {
+            color: #0072ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1f1f1f;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .back-to-top {
+            display: inline-block;
+            margin-top: 10px;
+            color: #00c6ff;
+            text-decoration: none;
+        }
+
+        .back-to-top:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-    <!-- Navigation Bar -->
-   <nav>
+
+<nav>
     <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-<li><a href="https://github.com/khemPaneru/Resume/blob/9d3838dc603446513ab871d959841240344a2b16/Resume%20(1).pdf">Resume</a></li>
-
-
-
-
+        <li><a href="https://github.com/khemPaneru/Resume" target="_blank">Resume</a></li>
     </ul>
 </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>KHEM PANERU</h1>
-        <p class="subtitle">Computer Systems & Networking Technician | Tech Enthusiast</p>
-        <div class="logo"></div>
-    </section>
+<section class="hero">
+    <h1>KHEM PANERU</h1>
+    <p class="subtitle">IT Support | Help Desk | Junior Network | Azure | Networking Technician</p>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="section about-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <img src="image.jpg" alt="Khem Paneru" class="profile-img">
-            <p>"I’m a Computer Systems and Networking Technician with a strong interest in Python, 
-                focusing on building practical solutions in networking and systems automation.".</p>
-            <p><strong>My interests include:</strong></p>
-            <ul class="interests">
-                <li>Network Setup & Troubleshooting</li>
-                <li>Firewall & Security Management</li>
-                <li>Cloud Networking & Virtualization</li>
-                <li>System Monitoring & Optimization</li>
-                <li>Router & Switch Configuration</li>
-            </ul>
-            <p><strong>Education:</strong> Completed +2 from NAST</p>
-            <p><strong>Background:</strong> Science background (Physical Group) with a focus on Computer Science 
-                        and practical coding experience 
-            <p>Feel free to reach out and connect! <a href="https://www.linkedin.com/in/khem-paneru-a59802327//" class="linkedin-link">LinkedIn</a></p>
-        </div>
-    </section>
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <img src="image.jpg" class="profile-img" alt="Khem Paneru">
+    <p>I am a Computer Systems and Networking Technician passionate about IT support, networking, and cloud technologies. I enjoy solving technical problems and building real-world IT solutions.</p>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section skills-section">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li><strong>Languages:</strong> Python, JavaScript, SQL</li>
-                <li><strong>Web:</strong> HTML, CSS</li>
-                <li><strong>Tools:</strong> Git, Docker, VS Code</li>
-                <li><strong>Networking:</strong> Cisco, Windows/Linux Server</li>
-                <li><strong>Cloud & Virtualization:</strong> Azure, VMware, Hyper-V</li>
-                <li><strong>IT Support & Troubleshooting</strong></li>
-            </ul>
-        </div>
-    </section>
+    <p><strong>Career Goal:</strong> Seeking entry-level IT Help Desk, Junior Network Administrator, or IT Support roles in Canada.</p>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
+    <p><strong>Interests:</strong></p>
+    <ul class="interests">
+        <li>IT Help Desk & Troubleshooting</li>
+        <li>Network Setup & Cisco Configuration</li>
+        <li>Cloud Computing (Azure)</li>
+        <li>System Administration</li>
+        <li>Cybersecurity Basics</li>
+    </ul>
 
-            <div class="project">
-                <h3>Coke Vending Machine Simulation</h3>
-                <p>A Python-based simulation of a Coke vending machine that accepts payments, dispenses drinks, and shows remaining balance. Simple console-based interface for learning purposes.</p>
-                <a href="https://github.com/code50/189806922/blob/main/coke/coke.py">View on GitHub</a>
-            </div>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/khem-paneru-a59802327/" target="_blank">Profile</a></p>
+</section>
 
-            <div class="project">
-                <h3>Pyfiglet Text Formatter</h3>
-                <p>Implemented a program using the <code>pyfiglet</code> module, which is a Python port of FIGlet. The program accepts command-line arguments, allows for random font display or user-specified fonts using the <code>-f</code> or <code>--font</code> option, and validates input. It exits with an error if arguments are incorrect.</p>
-                <a href=":https://lnkd.in/ePHagtGb">View on GitHub</a> 
-            </div>
+<section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+        <li><strong>Operating Systems:</strong> Windows 10/11, Windows Server, Linux basics</li>
+        <li><strong>Networking:</strong> TCP/IP, DNS, DHCP, VLANs, Subnetting, Cisco Packet Tracer</li>
+        <li><strong>IT Support:</strong> Hardware troubleshooting, remote support, ticketing systems (Jira)</li>
+        <li><strong>Cloud:</strong> Microsoft Azure (AZ-104 basics), Virtual Machines, Networking</li>
+        <li><strong>Security:</strong> Firewalls, VPN basics, access control</li>
+        <li><strong>Tools:</strong> Git, GitHub, VS Code, Docker basics</li>
+        <li><strong>Programming:</strong> Python automation, CLI tools</li>
+    </ul>
+</section>
 
-            <div class="project">
-                <h3>Date Format Converter</h3>
-                <p>Created a program that accepts input data in two formats (MM/DD/YY and Month Day, Year) and outputs the date in the format: Year-Month-Date (e.g., 1636-09-08). The loop can be exited using the Windows shortcut (Ctrl+D) if the user wishes to exit.</p>
-                <a href="https://github.com/code50/189806922/tree/main/emojize">View on GitHub</a>
-            </div>
-            <div class="project">
-                <h3>Simple Python Grocery List Program</h3>
-                <p>Created a Python program that takes a list of grocery items as input, prefixes repeated items with numbers, and converts them into uppercase. The program handles an <code>EOFError</code> exception, breaking the loop when the user is done creating their list by pressing the Windows shortcut (Ctrl + D).</p>
-                <a href="https://lnkd.in/euujXnQb">View on GitHub</a>
-            </div>
-        </div>
-    </section>
+<section id="projects" class="section">
+    <h2>Projects</h2>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Feel free to get in touch and let's work together!</p>
-            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/khem-paneru-a59802327/">LinkedIn</a></p>
-            <p><i class="fab fa-github"></i> <a href="https://github.com/khemPaneru">GitHub</a></p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:khempaneru2@gmail.com">khempaneru2@gmail.com</a></p>        </div>
-    </section>
-    
+    <div class="project">
+        <h3>IT Helpdesk Lab (Jira Simulation)</h3>
+        <p>Simulated IT support ticketing system using Jira workflow including issue tracking and resolution process.</p>
+        <a href="https://github.com/khemPaneru/IT-Helpdesk-Lab-Jira" target="_blank">View Project</a>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Khem Paneru. All Rights Reserved.</p>
-        <a href="#" class="back-to-top">↑ Back to Top</a>
-    </footer>
+    <div class="project">
+        <h3>CCNA Networking Labs (Packet Tracer)</h3>
+        <p>Configured routers, switches, VLANs, and subnetting using Cisco Packet Tracer.</p>
+        <a href="https://github.com/khemPaneru/Cisco-Packet-Tracer-Labs-Jeremy-s-CCNA-Course-" target="_blank">View Project</a>
+    </div>
+
+    <div class="project">
+        <h3>Azure Networking Project</h3>
+        <p>Deployed virtual machines and configured cloud networking using Microsoft Azure.</p>
+        <a href="https://github.com/khemPaneru/Azure-Networking-Project" target="_blank">View Project</a>
+    </div>
+
+    <div class="project">
+        <h3>AZ-104 Practice Labs</h3>
+        <p>Hands-on Azure administration practice including VM, storage, and networking setup.</p>
+        <a href="https://github.com/khemPaneru/AZ-104-Practice" target="_blank">View Project</a>
+    </div>
+
+    <div class="project">
+        <h3>Python POS System</h3>
+        <p>Built a command-line POS system with inventory and transaction logic.</p>
+        <a href="https://github.com/khemPaneru/python-pos-system" target="_blank">View Project</a>
+    </div>
+
+    <div class="project">
+        <h3>CS50 Python Projects</h3>
+        <p>Python projects including automation scripts, CLI tools, and simulations.</p>
+        <a href="https://github.com/code50/189806922" target="_blank">View Project</a>
+    </div>
+
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:khempaneru2@gmail.com">khempaneru2@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/khemPaneru" target="_blank">Profile</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/khem-paneru-a59802327/" target="_blank">Profile</a></p>
+</section>
+
+<footer>
+    <p>© 2025 Khem Paneru. All Rights Reserved.</p>
+    <a href="#" class="back-to-top">↑ Back to Top</a>
+</footer>
+
 </body>
 </html>
