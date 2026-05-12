@@ -1,6 +1,7 @@
 /* ==================================
    Khem Paneru Premium Portfolio CSS
    Modern / Recruiter Ready / Premium
+   Final Version With Bigger About Photo
    Save as: khem.css
 ================================== */
 
@@ -96,23 +97,25 @@ h2{
   color:#0f172a;
 }
 
-/* ABOUT */
+/* ABOUT PHOTO BIGGER RECTANGLE STYLE */
 .profile-img{
-  width:220px;
-  height:220px;
-  border-radius:50%;
+  width:320px;
+  height:390px;
   object-fit:cover;
+  object-position:center top;
   display:block;
-  margin:0 auto 28px;
+  margin:0 auto 32px;
+  border-radius:28px;
   border:5px solid white;
-  box-shadow:0 14px 35px rgba(0,0,0,.15);
+  box-shadow:0 18px 40px rgba(0,0,0,.18);
   transition:.4s ease;
 }
 
 .profile-img:hover{
-  transform:scale(1.04);
+  transform:scale(1.03);
 }
 
+/* TEXT */
 p,li{
   font-size:19px;
 }
@@ -126,7 +129,7 @@ ul{
   margin-bottom:12px;
 }
 
-/* SKILLS GRID FEEL */
+/* SKILLS */
 .skills-list li{
   background:#f8fafc;
   padding:14px 16px;
@@ -207,7 +210,7 @@ footer{
   text-decoration:underline;
 }
 
-/* SCROLL ANIMATION LOOK */
+/* ANIMATION */
 .section{
   animation:fadeUp .8s ease;
 }
@@ -258,8 +261,9 @@ footer{
   }
 
   .profile-img{
-    width:180px;
-    height:180px;
+    width:230px;
+    height:290px;
+    border-radius:22px;
   }
 
   .project h3{
