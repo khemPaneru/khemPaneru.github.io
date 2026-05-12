@@ -1,34 +1,36 @@
-/* General Styles */
+/* =========================
+   Khem Paneru Portfolio CSS
+   Save this as: khem.css
+   ========================= */
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
+  background-color: #f4f6f8;
   color: #333;
   line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centers vertically */
-  align-items: center; /* Centers horizontally */
-  min-height: 100vh; /* Ensures body takes full height */
 }
 
 nav {
-  background-color: #222;
-  padding: 1rem;
+  background-color: #1f1f1f;
+  padding: 15px;
   text-align: center;
-  width: 100%; /* Ensures navigation spans across the page */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: center; /* Centers the navigation items */
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 10px 15px;
 }
 
 nav ul li a {
@@ -38,15 +40,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  color: #00c6ff;
 }
 
 .hero {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
   color: white;
-  padding: 60px 20px;
   text-align: center;
-  width: 100%; /* Make sure hero section spans the page */
+  padding: 80px 20px;
 }
 
 .hero h1 {
@@ -55,66 +56,73 @@ nav ul li a:hover {
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 10px;
 }
 
 .section {
-  padding: 50px 20px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-  width: 100%; /* Ensure sections are fully aligned */
-  text-align: center; /* Centers content inside each section */
-}
-
-.container {
+  padding: 60px 20px;
+  background: white;
+  margin: 20px auto;
   max-width: 1000px;
-  margin: 0 auto; /* Centers the container horizontally */
-  padding: 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.linkedin-link {
-  margin-left: 10px;
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .profile-img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto 20px;
 }
 
-.skills-list, .interests {
-  padding-left: 0; /* Remove left padding */
-  text-align: left; /* Ensures the list items are left aligned */
-  margin: 0 auto; /* Centers the list in the container */
-  display: inline-block; /* Makes it inline-block for centering */
-  
- 
+ul {
+  padding-left: 20px;
 }
 
-.skills-list li, .interests li {
-  list-style-position: inside; /* Moves the bullets inside */
+.skills-list li,
+.interests li {
+  margin-bottom: 8px;
 }
 
 .project {
-  margin-bottom: 30px;
-  background-color: #f1f1f1;
+  background: #f1f1f1;
   padding: 20px;
+  margin-bottom: 20px;
   border-radius: 8px;
 }
 
-.project h3 {
-  margin-top: 0;
+.project a {
+  color: #0072ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #222;
+  background: #1f1f1f;
   color: white;
+  margin-top: 40px;
 }
 
 .back-to-top {
   display: inline-block;
-  margin-top: 10px
+  margin-top: 10px;
+  color: #00c6ff;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  text-decoration: underline;
+}
