@@ -1,128 +1,268 @@
-/* =========================
-   Khem Paneru Portfolio CSS
-   Save this as: khem.css
-   ========================= */
+/* ==================================
+   Khem Paneru Premium Portfolio CSS
+   Modern / Recruiter Ready / Premium
+   Save as: khem.css
+================================== */
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
-  line-height: 1.6;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-nav {
-  background-color: #1f1f1f;
-  padding: 15px;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+html{
+  scroll-behavior:smooth;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+body{
+  font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  background:linear-gradient(to bottom,#eef4ff,#f8fbff);
+  color:#1e293b;
+  line-height:1.8;
+  font-size:19px;
 }
 
-nav ul li {
-  margin: 10px 15px;
+/* NAVBAR */
+nav{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(15,23,42,0.92);
+  backdrop-filter:blur(12px);
+  padding:18px 25px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+nav ul{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
 }
 
-nav ul li a:hover {
-  color: #00c6ff;
+nav ul li a{
+  color:#ffffff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:17px;
+  transition:.3s ease;
 }
 
-.hero {
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
+nav ul li a:hover{
+  color:#38bdf8;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin: 0;
+/* HERO */
+.hero{
+  text-align:center;
+  padding:140px 20px 120px;
+  background:
+  radial-gradient(circle at top right,#38bdf830,transparent 35%),
+  radial-gradient(circle at left,#2563eb25,transparent 35%),
+  linear-gradient(135deg,#0f172a,#1e3a8a,#0284c7);
+  color:white;
 }
 
-.subtitle {
-  font-size: 1.3rem;
-  margin-top: 10px;
+.hero h1{
+  font-size:4.8rem;
+  font-weight:800;
+  letter-spacing:3px;
+  margin-bottom:20px;
 }
 
-.section {
-  padding: 60px 20px;
-  background: white;
-  margin: 20px auto;
-  max-width: 1000px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+.subtitle{
+  font-size:1.55rem;
+  max-width:1100px;
+  margin:auto;
+  opacity:.95;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 30px;
+/* GENERAL SECTION */
+.section{
+  max-width:1150px;
+  margin:40px auto;
+  padding:70px 50px;
+  background:rgba(255,255,255,0.92);
+  border-radius:22px;
+  box-shadow:0 18px 45px rgba(15,23,42,0.08);
+  border:1px solid rgba(255,255,255,.8);
 }
 
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 20px;
+h2{
+  text-align:center;
+  font-size:2.6rem;
+  margin-bottom:35px;
+  color:#0f172a;
 }
 
-ul {
-  padding-left: 20px;
+/* ABOUT */
+.profile-img{
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+  margin:0 auto 28px;
+  border:5px solid white;
+  box-shadow:0 14px 35px rgba(0,0,0,.15);
+  transition:.4s ease;
+}
+
+.profile-img:hover{
+  transform:scale(1.04);
+}
+
+p,li{
+  font-size:19px;
+}
+
+ul{
+  padding-left:25px;
 }
 
 .skills-list li,
-.interests li {
-  margin-bottom: 8px;
+.interests li{
+  margin-bottom:12px;
 }
 
-.project {
-  background: #f1f1f1;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
+/* SKILLS GRID FEEL */
+.skills-list li{
+  background:#f8fafc;
+  padding:14px 16px;
+  border-radius:12px;
+  margin-bottom:14px;
+  list-style:none;
+  border-left:5px solid #0ea5e9;
 }
 
-.project a {
-  color: #0072ff;
-  text-decoration: none;
-  font-weight: bold;
+/* PROJECT CARDS */
+.project{
+  background:linear-gradient(145deg,#ffffff,#f8fafc);
+  padding:28px;
+  margin-bottom:25px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+  transition:.35s ease;
 }
 
-.project a:hover {
-  text-decoration: underline;
+.project:hover{
+  transform:translateY(-8px);
+  box-shadow:0 18px 35px rgba(0,0,0,0.08);
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #1f1f1f;
-  color: white;
-  margin-top: 40px;
+.project h3{
+  font-size:1.55rem;
+  margin-bottom:10px;
+  color:#0f172a;
 }
 
-.back-to-top {
-  display: inline-block;
-  margin-top: 10px;
-  color: #00c6ff;
-  text-decoration: none;
+.project p{
+  margin-bottom:14px;
 }
 
-.back-to-top:hover {
-  text-decoration: underline;
+.project a{
+  display:inline-block;
+  padding:10px 18px;
+  background:#0284c7;
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:600;
+  transition:.3s ease;
+}
+
+.project a:hover{
+  background:#0369a1;
+}
+
+/* LINKS */
+a{
+  color:#0284c7;
+}
+
+/* CONTACT */
+#contact p{
+  margin-bottom:15px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:35px 20px;
+  background:#0f172a;
+  color:white;
+  margin-top:60px;
+}
+
+.back-to-top{
+  display:inline-block;
+  margin-top:14px;
+  color:#38bdf8;
+  text-decoration:none;
+  font-size:18px;
+}
+
+.back-to-top:hover{
+  text-decoration:underline;
+}
+
+/* SCROLL ANIMATION LOOK */
+.section{
+  animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  body{
+    font-size:17px;
+  }
+
+  nav ul{
+    gap:18px;
+  }
+
+  .hero{
+    padding:95px 20px 80px;
+  }
+
+  .hero h1{
+    font-size:3rem;
+    letter-spacing:1px;
+  }
+
+  .subtitle{
+    font-size:1.08rem;
+  }
+
+  .section{
+    margin:18px 10px;
+    padding:45px 22px;
+    border-radius:16px;
+  }
+
+  h2{
+    font-size:2rem;
+  }
+
+  .profile-img{
+    width:180px;
+    height:180px;
+  }
+
+  .project h3{
+    font-size:1.3rem;
+  }
 }
