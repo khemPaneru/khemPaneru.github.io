@@ -1,8 +1,5 @@
 /* ==================================
    Khem Paneru Premium Portfolio CSS
-   Modern / Recruiter Ready / Premium
-   Final Version With Bigger About Photo
-   Save as: khem.css
 ================================== */
 
 *{
@@ -97,7 +94,7 @@ h2{
   color:#0f172a;
 }
 
-/* ABOUT PHOTO BIGGER RECTANGLE STYLE */
+/* PROFILE IMAGE */
 .profile-img{
   width:320px;
   height:390px;
@@ -124,11 +121,6 @@ ul{
   padding-left:25px;
 }
 
-.skills-list li,
-.interests li{
-  margin-bottom:12px;
-}
-
 /* SKILLS */
 .skills-list li{
   background:#f8fafc;
@@ -139,7 +131,7 @@ ul{
   border-left:5px solid #0ea5e9;
 }
 
-/* PROJECT CARDS */
+/* PROJECTS */
 .project{
   background:linear-gradient(145deg,#ffffff,#f8fafc);
   padding:28px;
@@ -160,10 +152,6 @@ ul{
   color:#0f172a;
 }
 
-.project p{
-  margin-bottom:14px;
-}
-
 .project a{
   display:inline-block;
   padding:10px 18px;
@@ -172,16 +160,20 @@ ul{
   text-decoration:none;
   border-radius:10px;
   font-weight:600;
-  transition:.3s ease;
 }
 
 .project a:hover{
   background:#0369a1;
 }
 
-/* LINKS */
-a{
-  color:#0284c7;
+/* CERTIFICATIONS */
+.cert-list li{
+  background:#f8fafc;
+  padding:14px 16px;
+  border-radius:12px;
+  margin-bottom:14px;
+  list-style:none;
+  border-left:5px solid #22c55e;
 }
 
 /* CONTACT */
@@ -208,65 +200,4 @@ footer{
 
 .back-to-top:hover{
   text-decoration:underline;
-}
-
-/* ANIMATION */
-.section{
-  animation:fadeUp .8s ease;
-}
-
-@keyframes fadeUp{
-  from{
-    opacity:0;
-    transform:translateY(30px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
-}
-
-/* MOBILE */
-@media(max-width:768px){
-
-  body{
-    font-size:17px;
-  }
-
-  nav ul{
-    gap:18px;
-  }
-
-  .hero{
-    padding:95px 20px 80px;
-  }
-
-  .hero h1{
-    font-size:3rem;
-    letter-spacing:1px;
-  }
-
-  .subtitle{
-    font-size:1.08rem;
-  }
-
-  .section{
-    margin:18px 10px;
-    padding:45px 22px;
-    border-radius:16px;
-  }
-
-  h2{
-    font-size:2rem;
-  }
-
-  .profile-img{
-    width:230px;
-    height:290px;
-    border-radius:22px;
-  }
-
-  .project h3{
-    font-size:1.3rem;
-  }
 }
