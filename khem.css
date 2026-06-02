@@ -1,5 +1,172 @@
-/* ===== CERTIFICATION MODERN CARDS ===== */
+/* ==================================
+   Khem Paneru Premium Portfolio CSS
+================================== */
 
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  background:linear-gradient(to bottom,#eef4ff,#f8fbff);
+  color:#1e293b;
+  line-height:1.8;
+  font-size:19px;
+}
+
+/* NAVBAR */
+nav{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(15,23,42,0.92);
+  backdrop-filter:blur(12px);
+  padding:18px 25px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
+}
+
+nav ul li a{
+  color:#ffffff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:17px;
+  transition:.3s ease;
+}
+
+nav ul li a:hover{
+  color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:140px 20px 120px;
+  background:
+  radial-gradient(circle at top right,#38bdf830,transparent 35%),
+  radial-gradient(circle at left,#2563eb25,transparent 35%),
+  linear-gradient(135deg,#0f172a,#1e3a8a,#0284c7);
+  color:white;
+}
+
+.hero h1{
+  font-size:4.8rem;
+  font-weight:800;
+  letter-spacing:3px;
+  margin-bottom:20px;
+}
+
+.subtitle{
+  font-size:1.55rem;
+  max-width:1100px;
+  margin:auto;
+  opacity:.95;
+}
+
+/* GENERAL SECTION */
+.section{
+  max-width:1150px;
+  margin:40px auto;
+  padding:70px 50px;
+  background:rgba(255,255,255,0.92);
+  border-radius:22px;
+  box-shadow:0 18px 45px rgba(15,23,42,0.08);
+  border:1px solid rgba(255,255,255,.8);
+}
+
+h2{
+  text-align:center;
+  font-size:2.6rem;
+  margin-bottom:35px;
+  color:#0f172a;
+}
+
+/* PROFILE IMAGE */
+.profile-img{
+  width:320px;
+  height:390px;
+  object-fit:cover;
+  object-position:center top;
+  display:block;
+  margin:0 auto 32px;
+  border-radius:28px;
+  border:5px solid white;
+  box-shadow:0 18px 40px rgba(0,0,0,.18);
+  transition:.4s ease;
+}
+
+.profile-img:hover{
+  transform:scale(1.03);
+}
+
+/* TEXT */
+p,li{
+  font-size:19px;
+}
+
+ul{
+  padding-left:25px;
+}
+
+/* SKILLS */
+.skills-list li{
+  background:#f8fafc;
+  padding:14px 16px;
+  border-radius:12px;
+  margin-bottom:14px;
+  list-style:none;
+  border-left:5px solid #0ea5e9;
+}
+
+/* PROJECTS */
+.project{
+  background:linear-gradient(145deg,#ffffff,#f8fafc);
+  padding:28px;
+  margin-bottom:25px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+  transition:.35s ease;
+}
+
+.project:hover{
+  transform:translateY(-8px);
+  box-shadow:0 18px 35px rgba(0,0,0,0.08);
+}
+
+.project h3{
+  font-size:1.55rem;
+  margin-bottom:10px;
+  color:#0f172a;
+}
+
+.project a{
+  display:inline-block;
+  padding:10px 18px;
+  background:#0284c7;
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:600;
+}
+
+.project a:hover{
+  background:#0369a1;
+}
+
+/* CERTIFICATIONS (MODERN UPGRADE) */
 .cert-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -36,8 +203,35 @@
   border-radius:10px;
   text-decoration:none;
   font-weight:600;
+  transition:0.3s ease;
 }
 
 .cert-card a:hover{
   background:#0369a1;
+}
+
+/* CONTACT */
+#contact p{
+  margin-bottom:15px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:35px 20px;
+  background:#0f172a;
+  color:white;
+  margin-top:60px;
+}
+
+.back-to-top{
+  display:inline-block;
+  margin-top:14px;
+  color:#38bdf8;
+  text-decoration:none;
+  font-size:18px;
+}
+
+.back-to-top:hover{
+  text-decoration:underline;
 }
